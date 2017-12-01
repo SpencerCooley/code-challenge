@@ -8,16 +8,16 @@ class Hamming{
       var mutationCount = 0;
       //ensure the strands are the same length
       if(strandA.length != strandB.length){
-        throw 'DNA strands must be of equal length.'
+        throw 'DNA strands must be of equal length.';
       }
       else{
         //count the difference in nucleotides between strands
         for(var i = 0; i < strandA.length; i++) {
           if(strandA[i] != strandB[i]){
-            mutationCount++
+            mutationCount++;
           }
         }
-        return mutationCount
+        return mutationCount;
       }
     }
 }
